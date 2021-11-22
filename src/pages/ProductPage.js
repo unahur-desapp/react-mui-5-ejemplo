@@ -9,7 +9,7 @@ export function ProductPage() {
     useEffect(() => {
         const fetchProductData = async () => {
             try {
-                const obtainedProductData = await getProduct(5);
+                const obtainedProductData = await getProduct(3);
                 setProductData(obtainedProductData);
             } catch (err) {
                 console.log(err.response.data);

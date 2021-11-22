@@ -22,3 +22,8 @@ export async function addProduct(productData) {
     const apiResponse = await axios.post(`${config.apiUrl}/productos-hecho/con-compra`, productData);
     return apiResponse.data;
 }
+
+export async function getAllProducts() {
+    const apiResponse = await axios.get(`${config.apiUrl}/productos-hecho`);
+    return apiResponse.data;
+}

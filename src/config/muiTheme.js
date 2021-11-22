@@ -13,6 +13,9 @@ export const muiTheme = createTheme({
     typography: {
         info: {
             fontWeight: 'bold',
+        },
+        title: {
+            fontSize: '20px',
         }
     }
 });

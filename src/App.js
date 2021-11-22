@@ -4,6 +4,7 @@ import { TableExample03 } from "./components/examples/TableExample";
 import { AddProductPageMade } from "./pages/AddProductPageMade";
 import { ProductPage } from "./pages/ProductPage";
 import { ProductPageMade } from "./pages/ProductPageMade";
+import { ProductsPageMade } from "./pages/ProductsPageMade";
 
 // function App1() {
 //     return <TableExample03 />;
@@ -15,6 +16,7 @@ function App2() {
             <Route path="/ejemplo"><TableExample03 /></Route>
             <Route path="/producto"><ProductPage /></Route>
             <Route path="/producto-hecho"><ProductPageMade productId={3} /></Route>
+            <Route path="/productos-hecho"><ProductsPageMade /></Route>
             <Route path="/agregar-producto-hecho"><AddProductPageMade /></Route>
             <Route path="">
                 <div>... page not found ...</div>
